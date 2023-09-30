@@ -1,0 +1,14 @@
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\cdhae\Documents\2) Paul Lambin\BAC 3 (2023-2024)\Q1\Programmation Questions spéciales\.NET\.NET - Exercices\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll
