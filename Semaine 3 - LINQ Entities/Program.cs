@@ -85,7 +85,7 @@ foreach (var productSales in totalSalesByProduct)
  * 6.	Afficher tous les employés (leur nom) qui ont sous leur responsabilité la région « Western »
  */
 IQueryable<Employee> employees = context.Employees
-    .Where(e => e.ReportsTo != null && e.ReportsTo.Value == 5);
+    .Where(e => e.Territories.Any(t => t.Region.RegionDescription == "Western"));
 
 foreach (Employee e in employees)
 {
@@ -95,12 +95,11 @@ foreach (Employee e in employees)
 /**
  * 7.	Quels sont les territoires gérés par le supérieur de « Suyama Michael »
  */
-IQueryable<Employee> employees1 = context.Employees
-    .Where(e => e.FirstName == "Michael" && e.LastName == "Suyama");
+var territories = context.Employees
+    .Where(e => e.LastName.Equals("Suyama"))
+    .Select(e => e.ReportsToNavigation.Territories)
+    .SingleOrDefault();
 
-IQueryable<Territory> territories = employees1
-    .Select(e => e.ReportsToNavigation)
-    .SelectMany(e => e!.Territories);
 
 foreach (Territory t in territories)
 {
