@@ -25,13 +25,18 @@ namespace Student_API_Controllers.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Student>> Get()
         {
-            return _students;
+            return Ok(_students);
         }
 
         [HttpGet("{id}")]
         public ActionResult<Student> Get(int id)
         {
-            return _students.FirstOrDefault(s => s.Id == id);
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return Ok(student);
         }
 
         [HttpPost]
