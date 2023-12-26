@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel;
 using WpfEmployee.Models;
 
-namespace WpfEmployee.ViewModels
+namespace WpfApplication1.ViewModels
 {
-    internal class EmployeeModel
+    public class EmployeeModel : INotifyPropertyChanged
     {
 
         private readonly Employee _monEmployee;
@@ -15,6 +12,15 @@ namespace WpfEmployee.ViewModels
         public Employee MonEmployee
         {
             get { return _monEmployee; }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
 
 
@@ -42,6 +48,7 @@ namespace WpfEmployee.ViewModels
             set
             {
                 _monEmployee.TitleOfCourtesy = value;
+
             }
         }
 
@@ -59,7 +66,7 @@ namespace WpfEmployee.ViewModels
             set
             {
                 _monEmployee.LastName = value;
-
+                OnPropertyChanged("FullName");
             }
         }
         public String FirstName
@@ -68,20 +75,33 @@ namespace WpfEmployee.ViewModels
             set
             {
                 _monEmployee.FirstName = value;
+                OnPropertyChanged("FullName");
+            }
+        }
+        public DateTime? BirthDate
+        {
+            get { return _monEmployee.BirthDate; }
+            set
+            {
+                _monEmployee.BirthDate = value;
+
+                OnPropertyChanged("DisplayBirthDate");
+            }
+        }
+        public DateTime? HireDate
+        {
+            get { return _monEmployee.HireDate; }
+            set
+            {
+                _monEmployee.HireDate = value;
+
 
             }
         }
 
-        public DateTime? BirthDate
-        {
-            get { return _monEmployee.BirthDate; }
-            set { _monEmployee.BirthDate = value; }
-        }
 
-        public DateTime? HireDate
-        {
-            get { return _monEmployee.HireDate; }
-            set { _monEmployee.HireDate = value; }
-        }
+
+
+
     }
 }

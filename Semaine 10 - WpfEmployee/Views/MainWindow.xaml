@@ -15,7 +15,7 @@
             <RowDefinition Height="35" MinHeight="35"/>
         </Grid.RowDefinitions>
         <Label Margin="6" Content="Employees" />
-        <DataGrid Name="dgCustomers" Margin="6" Grid.Row="1" AutoGenerateColumns="False" ItemsSource="{Binding EmployeesList}" IsReadOnly="True">
+        <DataGrid Name="dgCustomers" Margin="6" Grid.Row="1" AutoGenerateColumns="False" SelectedItem="{Binding SelectedEmployee}" ItemsSource="{Binding EmployeesList}" IsReadOnly="True">
             <DataGrid.Columns>
                 <!--<DataGridTextColumn Binding="{Binding LastName}" Header="Name" Width="*" />-->
                 <DataGridTextColumn Binding="{Binding FullName}" Header="Full Name" Width="*" />
@@ -29,6 +29,7 @@
             <!-- IsEnabled="{Binding SelectedItem, ElementName=dgCustomers, Converter={StaticResource NullToBoolConverter}, ConverterParameter=true}" -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackPanel>
@@ -51,6 +52,18 @@
                 <DatePicker Height="27" Margin="6,6,6,5" SelectedDate="{Binding BirthDate}" />
                 <DatePicker Height="27" Margin="6,6,6,5" SelectedDate="{Binding HireDate}" />
             </StackPanel>
+            <DataGrid Grid.Column="2" AutoGenerateColumns="False"
+                      ItemsSource="{Binding DataContext.OrdersList,
+                RelativeSource={RelativeSource FindAncestor,
+                AncestorType={x:Type Window}}}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding OrderID}" Header="OrderID" Width="*" />
+                    <DataGridTextColumn Binding="{Binding OrderDate}" Header="OrderDate" Width="*" />
+                    <DataGridTextColumn Binding="{Binding OrderTotal}" Header="OrderTotal" Width="*" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+
 
         </Grid>
         <Button Command ="{Binding SaveCommand}" Content="Save" Width="75" Margin="6,6,87,6" Grid.Row="4" HorizontalAlignment="Right"/>
